@@ -32,3 +32,10 @@ You can also watch this [Video](https://www.youtube.com/watch?v=sw7UAZNgGg8) by 
 The A.I. is based on a number of pre determined moves it can execute. Every such move is part of a Movebox. A Movebox is a collection of moves.
 There will be 24 Moveboxes.
 
+Here is an example of a [Movebox](https://user-images.githubusercontent.com/79159418/108111172-9f004d80-7094-11eb-8e76-f37f4fa032ed.png), behold my drawing skills!
+
+In this movebox are three possible moves for the Computer, green, orange and purple. One move will be randomly determined and executed. 
+The twist to this is, that a move will be terminated from a movebox if the A.I. happens to lose. This means the A.I. will only use moves that it
+previously won with, or hasn't used before.
+
+A fitting movebox is chosen based on the current position of all pieces on the Board. 
