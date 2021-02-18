@@ -17,8 +17,34 @@ public class Tile {
 	 * 
 	 * A tile can be occupied, which makes it impossible for any other piece to move to it's location. However a piece can use the take action
 	 * to move to a tile occupied by an opponents piece and remove that piece from the game.
+	 * 
+	 *  
 	 */
 
+	// Attributes of a Tile
+	
+	boolean occupied;
+	int xCo;
+	int yCo;
+	
+	// Methods of a Tile
+	
+	// Determining whether a Tile is empty or not by comparing the coordinates of Tiles and Pieces
+		void setOccupied(int xCoordinatePiece, int yCoordinatePiece) {
+		
+		if(xCoordinatePiece == this.xCo && yCoordinatePiece == this.yCo) {
+			occupied = true;
+		} else {
+			occupied = false;
+		}
+	}
+	
+	
+	// getting information if Tile is empty of occupied.
+	boolean getOccupied(boolean occupied) {
+		return occupied;
+	}
+	
 	
 	
 }

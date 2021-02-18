@@ -23,6 +23,16 @@ public class Pawn {
 	 * takeRight.white 	=	(x+1; y+1) or (x+1; move.white)
 	 * takeLeft.black	=	(x-1; y-1) or (x-1; move.black)
 	 * takeRight.black	=	(x+1; y-1) or (x+1; move.black)
+	 * 
+	 * Just like a Tile, any piece has coordinates to determine it's location.
 	 */
+	
+	//Attributes of a Pawn
+	
+	//Coordinates on the Board
+	int xCo;
+	int yCo;
+	//to determine which Player owns this Piece
+	//public Player player; 
 	
 }
