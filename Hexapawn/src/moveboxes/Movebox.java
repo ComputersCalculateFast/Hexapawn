@@ -11,7 +11,7 @@ public class Movebox {
 	 * Every time the A.I. needs to take an action it determines one of those Moveboxes that matches the current position of their pieces
 	 * on the board. Then, one of the actions that Movebox contains is chosen randomly and that action is executed.
 	 * 
-	 * Once a game has ended and if the A.I. lost that game, all actions that had been used in that game are removed and won't be chosen
+	 * Once a game has ended and if the A.I. lost that game, the last action that had been executed is removed and won't be chosen
 	 * in future games.
 	 * 
 	 * Hence, the A.I. can only use actions that it previously won with, or hasn't used before.

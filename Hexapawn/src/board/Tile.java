@@ -19,4 +19,7 @@ public class Tile {
 	 * to move to a tile occupied by an opponents piece and remove that piece from the game.
 	 */
 
+	
+	
 }
+
