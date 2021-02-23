@@ -1,7 +1,7 @@
 package board;
 
 public class Tile {
-	
+
 	/* 
 	 * This class will define what properties a tile has.
 	 * Tiles are the single areas of the board a piece can move to.
@@ -22,30 +22,54 @@ public class Tile {
 	 */
 
 	// Attributes of a Tile
-	
+
 	boolean occupied;
-	int xCo;
-	int yCo;
-	
+	int xCo, yCo;
+
+
+	//Constructor
+
+	public Tile(int xCoordinate, int yCoordinate) {
+		this.xCo = xCoordinate;
+		this.yCo = yCoordinate;
+	}
+
 	// Methods of a Tile
-	
-	// Determining whether a Tile is empty or not by comparing the coordinates of Tiles and Pieces
-		void setOccupied(int xCoordinatePiece, int yCoordinatePiece) {
-		
+
+	// Setter for occupied (Is a piece occupying this Tile?)
+	void setOccupied(int xCoordinatePiece, int yCoordinatePiece) {
+
 		if(xCoordinatePiece == this.xCo && yCoordinatePiece == this.yCo) {
 			occupied = true;
 		} else {
 			occupied = false;
 		}
 	}
-	
-	
-	// getting information if Tile is empty of occupied.
+
+	// getter for occupied
 	boolean getOccupied(boolean occupied) {
 		return occupied;
 	}
-	
-	
-	
-}
 
+	//Setter for xCo
+	void setxCo(int xCoordinate) {
+		this.xCo = xCoordinate;
+	}
+
+	//getter for xCo
+	
+	public int getxCo() {
+		return xCo;
+	}
+	
+	//setter for yCoordinate
+	void setyCo(int yCoordinate) {
+		this.yCo = yCoordinate;
+	}
+
+	//getter for yCoordinate
+	int getyCo() {
+		return yCo;
+	}
+	
+}	
