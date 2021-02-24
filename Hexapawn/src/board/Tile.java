@@ -37,7 +37,7 @@ public class Tile {
 	// Methods of a Tile
 
 	// Setter for occupied (Is a piece occupying this Tile?)
-	void setOccupied(int xCoordinatePiece, int yCoordinatePiece) {
+	public void setOccupied(int xCoordinatePiece, int yCoordinatePiece) {
 
 		if(xCoordinatePiece == this.xCo && yCoordinatePiece == this.yCo) {
 			occupied = true;
@@ -47,12 +47,12 @@ public class Tile {
 	}
 
 	// getter for occupied
-	boolean getOccupied(boolean occupied) {
+	public boolean getOccupied(boolean occupied) {
 		return occupied;
 	}
 
 	//Setter for xCo
-	void setxCo(int xCoordinate) {
+	public void setxCo(int xCoordinate) {
 		this.xCo = xCoordinate;
 	}
 
@@ -63,12 +63,12 @@ public class Tile {
 	}
 	
 	//setter for yCoordinate
-	void setyCo(int yCoordinate) {
+	public void setyCo(int yCoordinate) {
 		this.yCo = yCoordinate;
 	}
 
 	//getter for yCoordinate
-	int getyCo() {
+	public int getyCo() {
 		return yCo;
 	}
 	

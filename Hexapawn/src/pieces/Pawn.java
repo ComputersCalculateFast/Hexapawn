@@ -49,42 +49,42 @@ public class Pawn {
 	}
 	
 	//Setter for xCo
-	void setxCo(int xCoordinate) {
+	public void setxCo(int xCoordinate) {
 		this.xCo = xCoordinate;
 	}
 	
 	//getter for xCo
-	int getxCo() {
+	public int getxCo() {
 		return xCo;
 	}
 	
 	//setter for yCo
-	void setyCo(int yCoordinate) {
+	public void setyCo(int yCoordinate) {
 		this.yCo = yCoordinate;
 	}
 	
 	//getter for yCo
-	int getyCo() {
+	public int getyCo() {
 		return yCo;
 	}
 	
 	//setter for Player
-	void setPlayer(Player controller) {
+	public void setPlayer(Player controller) {
 		this.player = controller;
 	}
 	
 	//getter for Player
-	Player getPlayer() {
+	public Player getPlayer() {
 		return player;
 	}
 	
 	//setter for color
-	void setColor(String colorOfPiece) {
+	public void setColor(String colorOfPiece) {
 		this.color = colorOfPiece;
 	}
 	
 	//getter for color
-	String getColor() {
+	public String getColor() {
 		return color;
 	}
 	
