@@ -1,5 +1,7 @@
 package pieces;
 
+import game.Player;
+
 public class Pawn {
 
 	/*
@@ -30,9 +32,67 @@ public class Pawn {
 	//Attributes of a Pawn
 	
 	//Coordinates on the Board
-	int xCo;
-	int yCo;
-	//to determine which Player owns this Piece
-	//public Player player; 
+	public int xCo;
+	public int yCo;
 	
+	//to determine which Player owns this Piece
+	public Player player; 
+	
+	public String color;
+	
+	//Constructor for Pawn
+	
+	public Pawn(int xCoordinate, int yCoordinate, String colorOfPiece) {
+		this.xCo = xCoordinate;
+		this.yCo = yCoordinate;
+		this.color = colorOfPiece; 
+	}
+	
+	//Setter for xCo
+	void setxCo(int xCoordinate) {
+		this.xCo = xCoordinate;
+	}
+	
+	//getter for xCo
+	int getxCo() {
+		return xCo;
+	}
+	
+	//setter for yCo
+	void setyCo(int yCoordinate) {
+		this.yCo = yCoordinate;
+	}
+	
+	//getter for yCo
+	int getyCo() {
+		return yCo;
+	}
+	
+	//setter for Player
+	void setPlayer(Player controller) {
+		this.player = controller;
+	}
+	
+	//getter for Player
+	Player getPlayer() {
+		return player;
+	}
+	
+	//setter for color
+	void setColor(String colorOfPiece) {
+		this.color = colorOfPiece;
+	}
+	
+	//getter for color
+	String getColor() {
+		return color;
+	}
+	
+	//move action
+	public int move() {
+		
+		this.yCo = this.yCo+1;
+		
+		return this.xCo & this.yCo;
+	}
 }
