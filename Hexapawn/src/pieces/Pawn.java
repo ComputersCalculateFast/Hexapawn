@@ -28,71 +28,75 @@ public class Pawn {
 	 * 
 	 * Just like a Tile, any piece has coordinates to determine it's location.
 	 */
-	
+
 	//Attributes of a Pawn
-	
+
 	//Coordinates on the Board
 	public int xCo;
 	public int yCo;
-	
+
 	//to determine which Player owns this Piece
 	public Player player; 
-	
+
 	public String color;
-	
+
 	//Constructor for Pawn
-	
+
 	public Pawn(int xCoordinate, int yCoordinate, String colorOfPiece) {
 		this.xCo = xCoordinate;
 		this.yCo = yCoordinate;
 		this.color = colorOfPiece; 
 	}
-	
+
 	//Setter for xCo
 	public void setxCo(int xCoordinate) {
 		this.xCo = xCoordinate;
 	}
-	
+
 	//getter for xCo
 	public int getxCo() {
 		return xCo;
 	}
-	
+
 	//setter for yCo
 	public void setyCo(int yCoordinate) {
 		this.yCo = yCoordinate;
 	}
-	
+
 	//getter for yCo
 	public int getyCo() {
 		return yCo;
 	}
-	
+
 	//setter for Player
 	public void setPlayer(Player controller) {
 		this.player = controller;
 	}
-	
+
 	//getter for Player
 	public Player getPlayer() {
 		return player;
 	}
-	
+
 	//setter for color
 	public void setColor(String colorOfPiece) {
 		this.color = colorOfPiece;
 	}
-	
+
 	//getter for color
 	public String getColor() {
 		return color;
 	}
-	
+
 	//move action
 	public int move() {
-		
-		this.yCo = this.yCo+1;
-		
-		return this.xCo & this.yCo;
+
+		switch(color) {
+		case "White":
+			this.yCo = this.yCo+1;
+		case "Black":
+			this.yCo = this.yCo-1; 
+		}
+		return this.yCo;
 	}
 }
