@@ -88,7 +88,7 @@ public class Pawn {
 		return color;
 	}
 
-	//move action
+	//move action 
 	public int move() {
 
 		switch(color) {
