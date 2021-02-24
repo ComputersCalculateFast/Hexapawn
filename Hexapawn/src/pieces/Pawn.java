@@ -92,24 +92,29 @@ public class Pawn {
 	 * move action
 	 * differentiates between Black and White pieces, so both use the same method to move
 	 */
-	public int move() {
+	public void move() {
 
 		switch(color) {
 		case "White":
 			this.yCo = this.yCo+1;
+			break;
 		case "Black":
 			this.yCo = this.yCo-1; 
+			break;
 		}
-		return this.yCo;
+
 	}
-	
-	public int take() {
+
+	/*
+	 * take action
+	 * moves one tile forward and one tile to either left or right and removes an opponents piece on that tile
+	 */
+	public void takeRight() {
 		
-		move();
+		this.move();
 		
 		this.xCo = this.xCo+1;
-		
-		return this.xCo;
+
 	}
-	
+
 }

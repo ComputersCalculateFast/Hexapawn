@@ -34,11 +34,20 @@ public class Main {
 			}
 		}
 
-	System.out.println(pawns.get(0).xCo + "," + pawns.get(0).yCo);
+//System.out.println(pawns.get(0).xCo + "," + pawns.get(0).yCo);
 	
-	pawns.get(0).take();
+//	pawns.get(0).takeRight();
 	
-	System.out.println(pawns.get(0).xCo + "," + pawns.get(0).yCo);
+//	System.out.println(pawns.get(0).xCo + "," + pawns.get(0).yCo);
+		
+		System.out.println(pawns.get(0).yCo);
+		System.out.println(pawns.get(1).yCo);
+		
+		pawns.get(0).move();
+		pawns.get(1).move();
+		
+		System.out.println(pawns.get(0).yCo);
+		System.out.println(pawns.get(1).yCo);
 	
 	
 		
