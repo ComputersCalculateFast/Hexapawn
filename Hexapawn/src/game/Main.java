@@ -34,6 +34,11 @@ public class Main {
 			}
 		}
 
+	System.out.println(pawns.get(0).xCo + "," + pawns.get(0).yCo);
+	
+	pawns.get(0).take();
+	
+	System.out.println(pawns.get(0).xCo + "," + pawns.get(0).yCo);
 	
 	
 		

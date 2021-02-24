@@ -88,7 +88,10 @@ public class Pawn {
 		return color;
 	}
 
-	//move action 
+	/*
+	 * move action
+	 * differentiates between Black and White pieces, so both use the same method to move
+	 */
 	public int move() {
 
 		switch(color) {
@@ -99,4 +102,14 @@ public class Pawn {
 		}
 		return this.yCo;
 	}
+	
+	public int take() {
+		
+		move();
+		
+		this.xCo = this.xCo+1;
+		
+		return this.xCo;
+	}
+	
 }
