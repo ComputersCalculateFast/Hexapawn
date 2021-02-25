@@ -40,13 +40,22 @@ public class Main {
 	
 //	System.out.println(pawns.get(0).xCo + "," + pawns.get(0).yCo);
 		
+		System.out.println("Start piece 1");
+		System.out.println(pawns.get(0).xCo);
 		System.out.println(pawns.get(0).yCo);
+		System.out.println("Start piece 2");
+		System.out.println(pawns.get(1).xCo);
 		System.out.println(pawns.get(1).yCo);
 		
-		pawns.get(0).move();
-		pawns.get(1).move();
+		System.out.println("take");
+		pawns.get(0).takeLeft();
+		pawns.get(1).takeLeft();
 		
+		System.out.println("end piece 1");
+		System.out.println(pawns.get(0).xCo);
 		System.out.println(pawns.get(0).yCo);
+		System.out.println("end piece 2");
+		System.out.println(pawns.get(1).xCo);
 		System.out.println(pawns.get(1).yCo);
 	
 	

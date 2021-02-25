@@ -110,10 +110,18 @@ public class Pawn {
 	 * moves one tile forward and one tile to either left or right and removes an opponents piece on that tile
 	 */
 	public void takeRight() {
-		
-		this.move();
-		
+
+		move();
+
 		this.xCo = this.xCo+1;
+
+	}
+
+	public void takeLeft() {
+
+		move();
+
+		this.xCo = this.xCo-1;
 
 	}
 
